@@ -3,6 +3,9 @@
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
 }
+.body {
+    -webkit-text-size-adjust: 100%;
+}
 
 .header{
 
@@ -15,7 +18,7 @@
     color: white;
 
 }
-@media screen and (max-width: 525px){
+@media screen and (max-width: 700px){
 
     .header{
 
@@ -114,11 +117,13 @@ nav-links{
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 4px;
 }
 .hero-btn:hover{
     border: 1px solid gold;
     background-color: darkslategray;
     transition: 1s;
+
 }
 
 nav .fa{
@@ -279,7 +284,7 @@ h3{
     margin-top: 240px;
     text-align: center;
 }
-@media screen and (max-width: 525px){
+@media screen and (max-width: 700px){
     .catalog-car img{
         display: inline-block;
         width: 300px;
@@ -330,6 +335,11 @@ h3{
         left: 50%;
         transform: translateX(-50%);
         display: flex;
+    }
+    @media screen and (max-width: 700px){
+        .navigation{
+            bottom: 20%;
+        }
     }
     .arrows{
         display: flex;
@@ -392,6 +402,7 @@ h3{
     #r4:checked ~ .s1{
         margin-left: -75%;
     }
+
     /*----------------------------*/
     /*-------------FAQ---------------*/
     .faq{
@@ -450,6 +461,13 @@ h3{
     display: none;
     overflow: hidden;
 }
+@media screen and (max-width: 700px){
+        ..faq h1{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+    }
 @keyframes fade {
     0%   { 
         opacity: 0;
@@ -513,7 +531,7 @@ h3{
     max-height: 100%;
     border-radius: 9px;
 }
-@media screen and (max-width: 525px){
+@media screen and (max-width: 700px){
     .review{
         width: 90%;
         margin-left: 5%;
@@ -529,6 +547,15 @@ h3{
 } 
 .otziv h1{
     margin-top: 40px;
+}
+
+.footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
 }
 
 .contactUs{
@@ -628,11 +655,11 @@ color:#FFF;
     position: fixed;
     z-index: 100;
     opacity: 1;
-    animation: fade1 0.7s ease-in-out;
+    animation: fade1 4s ease-in-out;
 }
 #load{
     display: none;
-    animation: fade1 1s ease-in-out;
+    
 }
 @keyframes fade1 {
     0%   { 
